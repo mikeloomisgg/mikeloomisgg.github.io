@@ -138,6 +138,6 @@ The compiler output for these two different approaches will actually be nearly i
 
 
 
-<a name="a1">1</a>: [https://think-async.com/Asio/] [↩](#asynchronous-callbacks)
+<a name="a1">1</a>: [https://think-async.com/Asio/](https://think-async.com/Asio/) [↩](#asynchronous-callbacks)
 
-<a name="a2">2</a>: [https://youtu.be/br4tez2G9eM] [↩](#behind-the-curtain)
+<a name="a2">2</a>: [https://youtu.be/br4tez2G9eM](https://youtu.be/br4tez2G9eM) [↩](#behind-the-curtain)
