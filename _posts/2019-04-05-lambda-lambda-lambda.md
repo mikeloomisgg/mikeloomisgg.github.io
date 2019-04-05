@@ -94,7 +94,7 @@ bool is_number(const std::string &s) {
 Standard algorithms often take these kind of predicate functions, it makes the algorithms much more flexible as higher order functions. Passing lambdas to these algorithms is way easier and simple than writing named functions every time you want to invoke an algorithm.
 
 ## Asynchronous callbacks
-An extremely common method of asynchronous programming is the usage of callbacks for sequencing operations. Very often, I need to *do_something* after I *do_something_else*. Most of these asynchronous functions operate as higher order functions that accept a completion handler as one of its parameters, like everything in the asio<sup>[1](#a1)</sup> library.
+An extremely common method of asynchronous programming is the usage of callbacks for sequencing operations. Very often, I need to *do_something* after I *do_something_else*. Most of these asynchronous functions operate as higher order functions that accept a completion handler as one of its parameters, like everything in the asio<sup>[1](#links)</sup> library.
 
 ```c++
 asio::read(stream, buffer, [](std::error_code error, std::size_t bytes) {
@@ -134,9 +134,10 @@ auto lambda = __lambda(three);
 std::cout << lambda(1, 2); // Output 103
 ```
 
-The compiler output for these two different approaches will actually be nearly identical, because that is what the compiler is doing behinds the scenes for the lambda. This property that the lambda is an object is what allows it to be passed around to functions. Check out Jason Turner's video<sup>[2](#a2)</sup> about lambdas for more info.
+The compiler output for these two different approaches will actually be nearly identical, because that is what the compiler is doing behinds the scenes for the lambda. This property that the lambda is an object is what allows it to be passed around to functions. Check out Jason Turner's video<sup>[2](#links)</sup> about lambdas for more info.
 
 
+### Links
 
 <a name="a1">1</a>: [https://think-async.com/Asio/](https://think-async.com/Asio/) [↩](#asynchronous-callbacks)
 
