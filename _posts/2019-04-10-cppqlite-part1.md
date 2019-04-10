@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Setting up a REPL
+title: Setting Up A Better REPL
 comments: true
 tags: [cpp, database]
 ---
 
-One of the very common criticisms of c++ is that it is very complicated. I saw someone on a programming stream yesterday claim that they prefer raw c because it feels more *intuitive*. To me, this just seems out of touch with reality. Lets look at the simplest REPL, from part 1 of the cstack database from scratch series. I think by the end anyone would agree with me that the c++ version of this code is better in every way to its c counterpart.
+One of the very common criticisms of c++ is that it is very complicated. I saw someone on a programming stream yesterday claim that they prefer raw c because it feels more *intuitive*. To me, this just seems out of touch with reality. Lets look at the simplest REPL, from [part 1](https://cstack.github.io/db_tutorial/parts/part1.html) of the cstack database from scratch series. I think by the end anyone would agree with me that the c++ version of this code is better in every way to its c counterpart.
 
 # Read Evaluate Print Loop
 
@@ -91,7 +91,7 @@ InputBuffer* input_buffer = new_input_buffer();
 void print_prompt() { printf("db > "); }
 ```
 ```c
-/// strcmp is unnecessary if we're using a built in RAII string type
+/// strcmp is unnecessary if we're using the std::string type which has overloaded the == operator for string literals
 if (strcmp(input_buffer->buffer, ".exit") == 0)
 ```
 ```c
@@ -132,4 +132,8 @@ Compare the two different versions' disassembly on a website like https://godbol
 
 This very simple REPL for part 1 perfectly illustrates how insane people sound to me when they claim that c is simpler or more intuitive than c++. In this simple case, c++ is approximately as easy to write and understand as a high level scripting language like python, but compiles down to a smaller binary than c.
 
-This post is part of a series which I am going to go through step by step simplifying and converting the cstack sqlite database into a more modern c++ version. So stay tuned for a better REPL parser implementation, database structure and persistence, and a look at btrees.
+This post is part of a series which I am going to go through step by step simplifying and converting the cstack sqlite database into a more modern c++ version. So stay tuned for the next parts where we'll discuss:
+- Better REPL parser implementations
+- Test Driven Developement in Practice
+- Database structure and persistence
+- A look at B-Trees
