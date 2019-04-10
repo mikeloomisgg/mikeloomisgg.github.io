@@ -5,6 +5,8 @@ comments: true
 tags: [cpp]
 ---
 
+What are lambdas and why should you care?
+
 <!-- Explain what lambdas are -->
 Technically, I am talking about unnamed functions. A concept which is ubiquitous in functional programming languages like Haskell or Lisp. There are many possible benefits toward this style of programming, but the reason I started loving lambdas is that it makes the code much more clear and concise.
 
