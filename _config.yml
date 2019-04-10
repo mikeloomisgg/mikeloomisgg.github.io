@@ -24,12 +24,12 @@ title:                 Mike Loomis
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  This is my personal blog about my search for best practices. I work with c++, cmake, python, cryptography, networking daily.
+  My search for best practices. I work with c++, cmake, python, cryptography, networking daily.
 # A shorter description for the sidebar.
 tagline:               >
-  Personal blog about my search for best practices.
+  My search for best practices.
 # A list of keywords for your blog
-keywords:              [best, practices, cpp, c++, python, cmake, networking, cryptography]
+keywords:              [best, practices, cpp, c++, python, cmake, network, cryptography, blockchain, database]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
