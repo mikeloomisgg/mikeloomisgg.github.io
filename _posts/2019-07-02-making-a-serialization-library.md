@@ -205,7 +205,7 @@ struct Example {
 };
 
 TEST_CASE("Website example") {
-  Example example{{{"compact", true}, {"schema", false}}};
+  Example example{};
   auto data = msgpack::pack(example);
 
   REQUIRE(data.size() == 18);
