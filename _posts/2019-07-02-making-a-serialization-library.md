@@ -159,11 +159,7 @@ Here is the example code for this implementation:
 ```c++
 std::stringstream ss;
 goodform::any var, var2;
-var = goodform::object
-  {
-    {"compact", true},
-    {"schema", 0}
-  };
+var = goodform::object{};
 
 goodform::msgpack::serialize(var, ss);
 goodform::msgpack::deserialize(ss, var2);
